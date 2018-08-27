@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TinyClient</title>
+    <style>
+      html, body{height: 100%; width: 100%;position: relative;}
+      *{padding: 0; margin: 0; font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif}
+      .main{padding: 0 10px; box-sizing: border-box; overflow: hidden;}
+      .btn{
+        width: 100%; height: 40px; line-height: 40px; text-align: center; margin: 20px auto;text-decoration: none; background: #4fc08d;border-radius: 20px; display: block; color: #fff;
+      }
+      .flex {display: flex; justify-content:space-between;}
+      .log textarea{box-sizing: border-box;white-space:pre-line;    line-height: 20px; padding: 10px; width: 100%; min-width: 100%;max-width: 100%; height: 300px; min-height: 300px; border-radius: 5px;max-height: 300px; border: none; -webkit-appearance: none; display: block; margin: 0 auto; margin-top: 10px;}
+      .left{float: left;} .right{float: right;} .clear{clear: both;}
+      .btn_min{width: 30%; height: 34px; line-height: 34px;  background: #ccc; color: #333; font-size: 14px; margin-left: 0; margin-right: 0; margin-bottom: 0;}
+      p{font-size: 12px; text-align: center; color: #999}
+      .modal{width: 100%; height: 100%; margin-left: -50%; background: #fff; position:absolute; top: 0; left: 50%; z-index: 2;}
+      .shadow{background: rgba(0, 0, 0, 0.55); height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 1;}
+      .modal{padding: 10px; box-sizing: border-box;}
+      .modal input{width: 100%; padding: 3px 10px; margin: 10px auto; box-sizing: border-box; height: 36px; line-height: 36px; border: 1px solid #999; color: #333;}
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="log">
+        <textarea id="log" name="" id="" cols="30" rows="10" disabled>Hallo! &#13;&#10;</textarea>
+      </div>
+      <div class="flex">
+        <a href="javascript:void(0)" class="btn btn_min" id="inDir">输入目录</a>
+        <a href="javascript:void(0)" class="btn btn_min" id="outDir">输出目录</a>
+        <a href="javascript:void(0)" class="btn btn_min" id="keyManage">Key 管理</a>
+      </div>
+      <a href="javascript:void(0)" class="btn clear" id="start">开始压缩</a>
+      <p> ♥ Do have faith in what you're doing. </p>
+      <p> <a href="javascript:void(0)" id="link"> Lucas </a> 2018 </p>
+      <!-- <div class="shadow"></div> -->
+      <div id="modal" class="modal" style="display:none">
+        <div id="keyListInput">
+          <input type="text" value="0YgtqWq2sMKf9qjUPsdWVvGfqc2zX2JS">
+          <input type="text">
+          <input type="text">
+          <input type="text">
+          <input type="text">
+          <input type="text">
+          <input type="text">
+        </div>
+        <div class="flex">
+            <a href="javascript:void(0)" class="btn btn_min" id="confirm">确定</a>
+            <a href="javascript:void(0)" class="btn btn_min" id="cancel">取消</a>
+            <a href="javascript:void(0)" class="btn btn_min" id="getKey">获取 Key</a>
+          </div>
+      </div>
+    </div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
