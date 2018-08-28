@@ -2,7 +2,7 @@
 
 TinyClient 是一个超强压缩图片的小工具，压缩率可以达到 50% 以上，压缩质量接近无损。是一个基于 Electron 和 Tinypng 的图片压缩客户端工具。
 
-![](https://raw.githubusercontent.com/Lucassssss/TinyClient/master/screenshot.png)
+![](https://raw.githubusercontent.com/Lucassssss/TinyClient/master/screenshot.gif)
 
 ## 开发/预览
 
