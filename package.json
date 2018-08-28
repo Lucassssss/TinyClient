@@ -17,7 +17,7 @@
   "author": "Lucas",
   "license": "CC0-3.0",
   "devDependencies": {
-    "electron": "^2.0.0",
+    "electron": "^2.0.8",
     "electron-builder": "^20.28.2"
   },
   "dependencies": {
